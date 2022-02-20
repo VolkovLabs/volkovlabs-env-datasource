@@ -4,7 +4,7 @@
 
 ### Features / Enhancements
 
-- Update dependencies and add tests
+- Add Tests, Provisioning and update README (#1)
 
 ## 1.0.0 (2022-02-20)
 
