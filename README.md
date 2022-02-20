@@ -23,10 +23,31 @@ Environment data source can be installed from the Grafana Marketplace or use the
 grafana-cli plugins install volkovlabs-env-datasource
 ```
 
+![Grafana Marketplace](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/grafana-marketplace.png)
+
 ## Features
 
 - Returns Environment Variables.
 - Allows to filter unnecessary or secured variables using Regex.
+
+## Provisioning
+
+Grafana supports managing data sources by adding one or more YAML config files in the `provisioning/datasources` folder.
+
+Example of provisioning the Environment Data Source with a filter `GF_` to return only Grafana related variables.
+
+```
+datasources:
+  - name: Environment
+    type: volkovlabs-env-datasource
+    access: proxy
+    isDefault: true
+    orgId: 1
+    version: 1
+    editable: true
+    jsonData:
+      filter: GF_
+```
 
 ## Feedback
 
