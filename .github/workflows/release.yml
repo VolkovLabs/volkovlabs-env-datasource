@@ -57,7 +57,7 @@ jobs:
         uses: magefile/mage-action@v1
         with:
           version: latest
-          args: cover
+          args: coverage
 
       - name: Build backend
         uses: magefile/mage-action@v1
