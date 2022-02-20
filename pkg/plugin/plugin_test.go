@@ -8,9 +8,14 @@ import (
 	"github.com/grafana/grafana-starter-datasource-backend/pkg/plugin"
 )
 
-// This is where the tests for the datasource backend live.
+/**
+ * Test Query
+ */
 func TestQueryData(t *testing.T) {
-	ds := plugin.SampleDatasource{}
+	settings := plugin.PluginSettings{
+		Filter: "",
+	}
+	ds := plugin.Datasource{Settings: &settings}
 
 	resp, err := ds.QueryData(
 		context.Background(),
@@ -20,6 +25,7 @@ func TestQueryData(t *testing.T) {
 			},
 		},
 	)
+
 	if err != nil {
 		t.Error(err)
 	}

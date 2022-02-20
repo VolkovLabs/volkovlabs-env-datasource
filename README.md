@@ -1,70 +1,46 @@
-# Grafana Data Source Backend Plugin Template
+# Displays environment variables on your Grafana dashboards
 
-[![Build](https://github.com/grafana/grafana-starter-datasource-backend/workflows/CI/badge.svg)](https://github.com/grafana/grafana-datasource-backend/actions?query=workflow%3A%22CI%22)
+![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-This template is a starting point for building Grafana Data Source Backend Plugins
+[![Grafana 8](https://img.shields.io/badge/Grafana-8-orange)](https://www.grafana.com)
+![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-env-datasource.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-env-datasource/context:javascript)
 
-## What is Grafana Data Source Backend Plugin?
+## Introduction
 
-Grafana supports a wide range of data sources, including Prometheus, MySQL, and even Datadog. There’s a good chance you can already visualize metrics from the systems you have set up. In some cases, though, you already have an in-house metrics solution that you’d like to add to your Grafana dashboards. Grafana Data Source Plugins enables integrating such solutions with Grafana.
+The Environment data source is a plugin for Grafana that returns environment variables to display on your dashboard.
 
-For more information about backend plugins, refer to the documentation on [Backend plugins](https://grafana.com/docs/grafana/latest/developers/plugins/backend/).
+### Requirements
 
-## Getting started
+Grafana 8.0 is required.
 
-A data source backend plugin consists of both frontend and backend components.
+## Getting Started
 
-### Frontend
+Environment data source can be installed from the Grafana Marketplace or use the `grafana-cli` tool to install from the command line:
 
-1. Install dependencies
+```bash
+grafana-cli plugins install volkovlabs-env-datasource
+```
 
-   ```bash
-   yarn install
-   ```
+## Features
 
-2. Build plugin in development mode or run in watch mode
+- Returns Environment Variables.
+- Allows to filter unnecessary or secured variables using Regex.
 
-   ```bash
-   yarn dev
-   ```
+## Feedback
 
-   or
+We love to hear from users, developers, and the whole community interested in this plugin. These are various ways to get in touch with us:
 
-   ```bash
-   yarn watch
-   ```
+- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues/new/choose).
+- Star the repository to show your support.
 
-3. Build plugin in production mode
+## Contributing
 
-   ```bash
-   yarn build
-   ```
+- Fork the repository.
+- Find an issue to work on and submit a pull request.
+- Could not find an issue? Look for documentation, bugs, typos, and missing features.
 
-### Backend
+## License
 
-1. Update [Grafana plugin SDK for Go](https://grafana.com/docs/grafana/latest/developers/plugins/backend/grafana-plugin-sdk-for-go/) dependency to the latest minor version:
-
-   ```bash
-   go get -u github.com/grafana/grafana-plugin-sdk-go
-   go mod tidy
-   ```
-
-2. Build backend plugin binaries for Linux, Windows and Darwin:
-
-   ```bash
-   mage -v
-   ```
-
-3. List all available Mage targets for additional commands:
-
-   ```bash
-   mage -l
-   ```
-
-## Learn more
-
-- [Build a data source backend plugin tutorial](https://grafana.com/tutorials/build-a-data-source-backend-plugin)
-- [Grafana documentation](https://grafana.com/docs/)
-- [Grafana Tutorials](https://grafana.com/tutorials/) - Grafana Tutorials are step-by-step guides that help you make the most of Grafana
-- [Grafana UI Library](https://developers.grafana.com/ui) - UI components to help you build interfaces using Grafana Design System
-- [Grafana plugin SDK for Go](https://grafana.com/docs/grafana/latest/developers/plugins/backend/grafana-plugin-sdk-for-go/)
+- Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-env-datasource/blob/main/LICENSE).

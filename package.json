@@ -1,28 +1,30 @@
 {
-  "name": "simple-datasource-backend",
-  "version": "1.0.0",
-  "description": "Grafana Data Source Backend Plugin Template",
-  "scripts": {
-    "build": "grafana-toolkit plugin:build",
-    "test": "grafana-toolkit plugin:test",
-    "dev": "grafana-toolkit plugin:dev",
-    "watch": "grafana-toolkit plugin:dev --watch",
-    "sign": "grafana-toolkit plugin:sign",
-    "start": "yarn watch"
-  },
-  "author": "Grafana Labs",
-  "license": "Apache-2.0",
+  "author": "Volkov Labs",
+  "description": "Data Source to return environment variables for Grafana",
   "devDependencies": {
-    "@grafana/data": "latest",
-    "@grafana/toolkit": "latest",
-    "@grafana/runtime": "latest",
-    "@grafana/ui": "latest",
-    "@types/lodash": "latest"
-  },
-  "resolutions": {
-    "rxjs": "7.3.0"
+    "@grafana/data": "8.4.1",
+    "@grafana/runtime": "8.4.1",
+    "@grafana/toolkit": "8.4.1",
+    "@grafana/ui": "8.4.1",
+    "@types/lodash": "4.14.178"
   },
   "engines": {
-    "node": ">=14"
-  }
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "name": "volkovlabs-env-datasource",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build --coverage",
+    "build:backend": "mage -v lint && mage -v coverage && mage -v",
+    "dev": "grafana-toolkit plugin:dev",
+    "restart:docker:plugin": "docker exec -it grafana pkill -f volkovlabs-env-datasource",
+    "sign": "grafana-toolkit plugin:sign --rootUrls http://localhost:3000/",
+    "start": "docker-compose pull && docker-compose up",
+    "stop": "docker-compose down",
+    "test": "grafana-toolkit plugin:test",
+    "test:backend": "mage cover",
+    "upgrade": "yarn upgrade --latest",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "version": "1.0.0"
 }
