@@ -5,8 +5,7 @@
     "@grafana/data": "8.4.1",
     "@grafana/runtime": "8.4.1",
     "@grafana/toolkit": "8.4.1",
-    "@grafana/ui": "8.4.1",
-    "@types/lodash": "4.14.178"
+    "@grafana/ui": "8.4.1"
   },
   "engines": {
     "node": ">=16"
@@ -26,5 +25,5 @@
     "upgrade": "yarn upgrade --latest",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
