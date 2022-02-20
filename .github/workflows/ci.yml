@@ -81,6 +81,6 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           directory: ./coverage/
-          files: ./coverage/lcov.info, ./coverage/backend.out
+          files: ./coverage/lcov.info,./coverage/backend.out
           env_vars: OS,PYTHON
           fail_ci_if_error: true
