@@ -21,7 +21,7 @@
     "start": "docker-compose pull && docker-compose up",
     "stop": "docker-compose down",
     "test": "grafana-toolkit plugin:test",
-    "test:backend": "mage cover",
+    "test:backend": "mage coverage",
     "upgrade": "yarn upgrade --latest",
     "watch": "grafana-toolkit plugin:dev --watch"
   },

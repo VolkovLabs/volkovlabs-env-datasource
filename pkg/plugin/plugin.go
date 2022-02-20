@@ -79,8 +79,6 @@ func (d *Datasource) query(_ context.Context, settings PluginSettings, query bac
 	var ids []string
 	var values []string
 
-	log.DefaultLogger.Info("Query called", "filter", settings.Filter)
-
 	/**
 	 * Compile regex
 	 */
@@ -119,10 +117,10 @@ func (d *Datasource) query(_ context.Context, settings PluginSettings, query bac
  * CheckHealth handles health checks sent from Grafana to the plugin
  */
 func (d *Datasource) CheckHealth(ctx context.Context, req *backend.CheckHealthRequest) (*backend.CheckHealthResult, error) {
-	log.DefaultLogger.Info("CheckHealth called", "request", req)
+	log.DefaultLogger.Debug("CheckHealth called", "request", req)
 
 	var status = backend.HealthStatusOk
-	var message = "Data source is working"
+	var message = "Data Source is working as expected."
 
 	/**
 	 * Create response struct
@@ -141,7 +139,7 @@ func (d *Datasource) CheckHealth(ctx context.Context, req *backend.CheckHealthRe
 	 */
 	if res.Frames[0].Fields[0].Len() < 1 {
 		status = backend.HealthStatusError
-		message = "Can't find any environment variable"
+		message = "Can't find any environment variable."
 	}
 
 	return &backend.CheckHealthResult{
