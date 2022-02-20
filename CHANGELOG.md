@@ -1,10 +1,11 @@
 # Changelog
 
-## 1.1.0 (IN PROGRESS)
+## 1.1.0 (2022-02-20)
 
 ### Features / Enhancements
 
 - Add Tests, Provisioning and update README (#1)
+- Add Frontend Tests (#2)
 
 ## 1.0.0 (2022-02-20)
 

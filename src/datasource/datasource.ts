@@ -24,7 +24,7 @@ export class DataSource extends DataSourceWithBackend<Query, DataSourceOptions> 
    * @param {any} options Options
    * @returns {Promise<MetricFindValue[]>} Metric Find Values
    */
-  async metricFindQuery?(query: string, options?: any): Promise<MetricFindValue[]> {
+  async metricFindQuery(query: string, options?: any): Promise<MetricFindValue[]> {
     /**
      * If query is not specified
      */
