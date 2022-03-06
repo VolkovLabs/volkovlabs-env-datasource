@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The Environment data source is a plugin for Grafana that returns environment variables to display on your dashboard.
+The Environment data source is a plugin for Grafana that returns environment variables to display on your dashboard or use as Variables to retrieve data.
 
 ### Requirements
 
@@ -17,13 +17,11 @@ Grafana 8.0 is required.
 
 ## Getting Started
 
-Environment data source can be installed from the Grafana Marketplace or use the `grafana-cli` tool to install from the command line:
+Because of the security reasons Environment data source can not be included in the Grafana Marketplace and can be installed manually from our private repository or downloaded directly from the GitHub repository:
 
 ```bash
-grafana-cli plugins install volkovlabs-env-datasource
+grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
 ```
-
-![Grafana Marketplace](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/grafana-marketplace.png)
 
 ## Features
 
