@@ -1,10 +1,11 @@
 # Changelog
 
-## 1.2.0 (IN PROGRESS)
+## 1.2.0 (2022-05-01)
 
 ### Features / Enhancements
 
-- Rebuild using Grafana 8.4.3 and update README
+- Rebuild using Grafana 8.4.3 and update README (#3)
+- Rebuild based on Grafana 8.5.1 (#4)
 
 ## 1.1.0 (2022-02-20)
 
