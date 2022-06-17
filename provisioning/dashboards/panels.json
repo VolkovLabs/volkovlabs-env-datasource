@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -21,11 +24,15 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1645328712939,
+  "iteration": 1655482705159,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "volkovlabs-env-datasource",
+        "uid": "P9E471951A1B4106E"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -63,7 +70,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.1",
+      "pluginVersion": "9.0.0",
       "title": "Edition",
       "transformations": [
         {
@@ -88,6 +95,10 @@
       "type": "stat"
     },
     {
+      "datasource": {
+        "type": "volkovlabs-env-datasource",
+        "uid": "P9E471951A1B4106E"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -125,7 +136,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "8.4.1",
+      "pluginVersion": "9.0.0",
       "title": "Version",
       "transformations": [
         {
@@ -150,6 +161,10 @@
       "type": "stat"
     },
     {
+      "datasource": {
+        "type": "volkovlabs-env-datasource",
+        "uid": "P9E471951A1B4106E"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -157,7 +172,8 @@
           },
           "custom": {
             "align": "auto",
-            "displayMode": "auto"
+            "displayMode": "auto",
+            "inspect": false
           },
           "mappings": [],
           "thresholds": {
@@ -197,12 +213,12 @@
           }
         ]
       },
-      "pluginVersion": "8.4.1",
+      "pluginVersion": "9.0.0",
       "title": "Environment Variables",
       "type": "table"
     }
   ],
-  "schemaVersion": 35,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -210,8 +226,12 @@
       {
         "current": {
           "selected": false,
-          "text": "8.4.1",
-          "value": "8.4.1"
+          "text": "9.0.0",
+          "value": "9.0.0"
+        },
+        "datasource": {
+          "type": "volkovlabs-env-datasource",
+          "uid": "P9E471951A1B4106E"
         },
         "definition": "GF_VERSION",
         "hide": 0,
@@ -239,6 +259,6 @@
   "timezone": "",
   "title": "Environment Variables",
   "uid": "BiIFntf7k",
-  "version": 2,
+  "version": 1,
   "weekStart": ""
 }

@@ -6,6 +6,7 @@ datasources:
     access: proxy
     isDefault: true
     orgId: 1
+    uid: P9E471951A1B4106E
     version: 1
     editable: true
     jsonData:
