@@ -11,6 +11,8 @@
 
 The Environment data source is a plugin for Grafana that returns environment variables to display on your dashboard or use as Variables to retrieve data.
 
+[![Environment Data Source for Grafana By Volkov Labs | Displaying Environment Variables](https://raw.githubusercontent.com/volkovlabs/volkovlabs-env-datasource/main/img/video.png)](https://youtu.be/GPzsciOxKdk)
+
 ### Requirements
 
 - **Grafana 8.5+**, **Grafana 9.0+** is required for version 2.X.
