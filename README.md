@@ -26,6 +26,8 @@ Because of the security reasons Environment data source can not be included in t
 grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
 ```
 
+Plugin is signed for Grafana running on `http://localhost:3000`. if you are using different URL, take a look at [Allow Unsigned Plugins](https://volkovlabs.io/plugins/grafana-allow-unsigned/).
+
 ## Features
 
 - Returns Environment Variables.
