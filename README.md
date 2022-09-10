@@ -39,7 +39,7 @@ Grafana supports managing data sources by adding one or more YAML config files i
 
 Example of provisioning the Environment Data Source with a filter `GF_` to return only Grafana related variables.
 
-```json
+```yaml
 datasources:
   - name: Environment
     type: volkovlabs-env-datasource
