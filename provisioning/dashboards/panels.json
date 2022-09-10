@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1655482705159,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -70,7 +69,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.1.1",
       "title": "Edition",
       "transformations": [
         {
@@ -136,7 +135,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.1.1",
       "title": "Version",
       "transformations": [
         {
@@ -213,12 +212,12 @@
           }
         ]
       },
-      "pluginVersion": "9.0.0",
+      "pluginVersion": "9.1.1",
       "title": "Environment Variables",
       "type": "table"
     }
   ],
-  "schemaVersion": 36,
+  "schemaVersion": 37,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -226,8 +225,8 @@
       {
         "current": {
           "selected": false,
-          "text": "9.0.0",
-          "value": "9.0.0"
+          "text": "9.1.1",
+          "value": "9.1.1"
         },
         "datasource": {
           "type": "volkovlabs-env-datasource",

@@ -2,10 +2,10 @@
   "author": "Volkov Labs",
   "description": "Data Source to return environment variables for Grafana",
   "devDependencies": {
-    "@grafana/data": "9.0.7",
-    "@grafana/runtime": "9.0.7",
-    "@grafana/toolkit": "9.0.7",
-    "@grafana/ui": "9.0.7",
+    "@grafana/data": "9.1.4",
+    "@grafana/runtime": "9.1.4",
+    "@grafana/toolkit": "9.1.4",
+    "@grafana/ui": "9.1.4",
     "@types/enzyme": "^3.10.12",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",
@@ -29,5 +29,5 @@
     "upgrade": "yarn upgrade --latest",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
-  "version": "2.1.0"
+  "version": "2.2.0"
 }
