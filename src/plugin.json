@@ -20,6 +20,10 @@
         "url": "https://github.com/VolkovLabs/volkovlabs-env-datasource"
       },
       {
+        "name": "YouTube Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLPow72ygztmRCTyV2W5ghK2_5jLLsyGLc"
+      },
+      {
         "name": "License",
         "url": "https://github.com/VolkovLabs/volkovlabs-env-datasource/blob/main/LICENSE"
       }

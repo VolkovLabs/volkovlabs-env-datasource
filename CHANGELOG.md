@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.0 (IN PROGRESS)
+## 2.2.0 (2022-11-06)
 
 ### Features / Enhancements
 
@@ -8,6 +8,7 @@
 - Update YouTube video in README (#11)
 - Add Compatibility Check Workflow (#12)
 - Update CI to Node 16 and Synchronize with Release workflow (#13)
+- Update to Grafana 9.2.2 (#14)
 
 ## 2.1.0 (2022-08-15)
 
