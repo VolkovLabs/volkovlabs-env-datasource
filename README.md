@@ -2,10 +2,10 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-[![Grafana 9](https://img.shields.io/badge/Grafana-9.1.4-orange)](https://www.grafana.com)
+[![Grafana](https://img.shields.io/badge/Grafana-9.2.2-orange)](https://www.grafana.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Playlist-red)](https://www.youtube.com/playlist?list=PLPow72ygztmSGfvGdXriFE-LVuS4Glg7w)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-env-datasource.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-env-datasource/context:javascript)
 
 ## Introduction
 
@@ -20,7 +20,7 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Getting Started
 
-Environment Data Source is not included in the Grafana Marketplace. It can be installed manually from our Private Repository or downloaded directly from the GitHub:
+Environment Data Source is not included in the Grafana Catalog. It can be installed manually from our Private Repository or downloaded directly from the GitHub:
 
 ```bash
 grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
@@ -57,6 +57,7 @@ datasources:
 We love to hear from users, developers, and the whole community interested in this plugin. These are various ways to get in touch with us:
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues/new/choose).
+- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 - Star the repository to show your support.
 
 ## License
