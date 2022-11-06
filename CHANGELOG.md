@@ -7,6 +7,7 @@
 - Update to Grafana 9.1.4 (#10)
 - Update YouTube video in README (#11)
 - Add Compatibility Check Workflow (#12)
+- Update CI to Node 16 and Synchronize with Release workflow (#13)
 
 ## 2.1.0 (2022-08-15)
 
