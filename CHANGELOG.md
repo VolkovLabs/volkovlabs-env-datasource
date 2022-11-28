@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update README to explain how to use data source for custom domain (#18)
+- Add NGINX configuration example (#18)
+
 ## 2.2.0 (2022-11-06)
 
 ### Features / Enhancements
