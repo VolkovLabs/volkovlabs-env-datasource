@@ -6,6 +6,7 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Playlist-red)](https://www.youtube.com/playlist?list=PLPow72ygztmSGfvGdXriFE-LVuS4Glg7w)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
+[![CodeQL](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml)
 
 ## Introduction
 
@@ -20,18 +21,68 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Getting Started
 
-Environment Data Source is not included in the Grafana Catalog. It can be installed manually from our Private Repository or downloaded directly from the GitHub:
+Environment Data Source is not included in the Grafana Catalog and signed as Private plugin. It can be installed manually from our Private Repository or downloaded directly from the GitHub:
 
 ```bash
 grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
 ```
 
-Plugin is signed for Grafana running on `http://localhost:3000`. if you are using different URL, take a look at [Allow Unsigned Plugins](https://volkovlabs.io/plugins/grafana-allow-unsigned/).
-
 ## Features
 
 - Returns Environment Variables.
 - Allows to filter unnecessary or secured variables using Regex.
+
+## Private plugin
+
+Plugin is signed as Private plugin for Grafana running using default domain `http://localhost:3000`. If you are using custom domain URL, there are various options depends on your deployment:
+
+### NGINX Reverse proxy
+
+  We recommend using NGINX in front of the Grafana for an extra level of protection. It allows keeping the default domain and redirect requests.
+
+  Here is the quick example for Docker Compose. You can find full example in the repository.
+
+```docker
+version: '3.4'
+
+services:
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000/tcp
+    environment:
+      - GF_INSTALL_PLUGINS=https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v2.2.0/volkovlabs-env-datasource-2.2.0.zip;volkovlabs-env-datasource
+    volumes:
+      - ./provisioning:/etc/grafana/provisioning
+
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    restart: always
+    environment:
+      - GRAFANA_HOST=localhost
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+    depends_on:
+      - grafana
+```
+
+### Unsigned plugin
+
+  Take a look at [Allow Unsigned Plugins](https://volkovlabs.io/plugins/grafana-allow-unsigned/) section in the documentation.
+
+### Build plugin and sign 
+
+  Alternatively, you can build and sign plugin manually following instructions. **Go and Node.js are required**.
+
+```
+yarn install
+yarn build
+yarn build:backend
+grafana-toolkit plugin:sign --rootUrls http://XXX/
+```
 
 ## Provisioning
 
