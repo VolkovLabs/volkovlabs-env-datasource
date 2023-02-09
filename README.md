@@ -34,7 +34,7 @@ grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-
 
 ## Private plugin
 
-Plugin is signed as Private plugin for Grafana running using default domain `http://localhost:3000`. If you are using custom domain URL, there are various options depends on your deployment:
+Plugin is signed as a Private plugin for Grafana using the default domain `http://localhost:3000``. If you are using custom domain URL, there are various options depends on your deployment:
 
 ### NGINX Reverse proxy
 
@@ -71,7 +71,7 @@ services:
 
 ### Unsigned plugin
 
-  Take a look at [Allow Unsigned Plugins](https://volkovlabs.io/plugins/grafana-allow-unsigned/) section in the documentation.
+  Take a look at [Allow Unsigned Plugins](https://volkovlabs.io/plugins/grafana/allow-unsigned/) section in the documentation.
 
 ### Build plugin and sign 
 
@@ -105,7 +105,7 @@ datasources:
 
 ## Feedback
 
-We love to hear from users, developers, and the whole community interested in this plugin. These are various ways to get in touch with us:
+We love to hear from you. There are various ways to get in touch with us:
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues/new/choose).
 - Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
