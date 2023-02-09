@@ -4,8 +4,9 @@
 
 ### Features / Enhancements
 
-- Update README to explain how to use data source for custom domain (#18)
+- Update README to explain how to use data source for a custom domain (#18)
 - Add NGINX configuration example (#18)
+- Update to Grafana 9.3.6 (#19)
 
 ## 2.2.0 (2022-11-06)
 

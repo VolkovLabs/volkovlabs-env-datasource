@@ -69,7 +69,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.1.1",
+      "pluginVersion": "9.3.6",
       "title": "Edition",
       "transformations": [
         {
@@ -135,7 +135,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.1.1",
+      "pluginVersion": "9.3.6",
       "title": "Version",
       "transformations": [
         {
@@ -192,7 +192,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 28,
+        "h": 22,
         "w": 24,
         "x": 0,
         "y": 3
@@ -212,7 +212,7 @@
           }
         ]
       },
-      "pluginVersion": "9.1.1",
+      "pluginVersion": "9.3.6",
       "title": "Environment Variables",
       "type": "table"
     }
@@ -224,9 +224,9 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "9.1.1",
-          "value": "9.1.1"
+          "selected": true,
+          "text": "9.3.6",
+          "value": "9.3.6"
         },
         "datasource": {
           "type": "volkovlabs-env-datasource",
