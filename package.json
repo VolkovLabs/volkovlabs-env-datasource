@@ -22,6 +22,7 @@
     "build": "grafana-toolkit plugin:build --coverage",
     "build:backend": "mage -v lint && mage -v coverage && mage -v",
     "dev": "grafana-toolkit plugin:dev",
+    "levitate": "npx @grafana/levitate@latest is-compatible --path src/module.ts --target @grafana/data,@grafana/runtime,@grafana/ui",
     "restart:docker:plugin": "docker exec -it grafana pkill -f volkovlabs-env-datasource",
     "sign": "grafana-toolkit plugin:sign --rootUrls http://localhost:3000/",
     "start": "docker-compose pull && docker-compose up",
