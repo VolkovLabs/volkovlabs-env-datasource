@@ -13,6 +13,6 @@ type Props = QueryEditorProps<DataSource, Query, DataSourceOptions>;
  */
 export class QueryEditor extends PureComponent<Props> {
   render() {
-    return <></>;
+    return <>No options is available.</>;
   }
 }
