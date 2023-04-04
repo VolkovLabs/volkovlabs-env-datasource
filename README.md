@@ -34,7 +34,7 @@ grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-
 
 ## Private plugin
 
-Plugin is signed as a Private plugin for Grafana using the default domain `http://localhost:3000``. If you are using custom domain URL, there are various options depends on your deployment:
+Plugin is signed as a Private plugin for Grafana using the default domain `http://localhost:3000`. If you are using custom domain URL, there are various options depends on your deployment:
 
 ### NGINX Reverse proxy
 
