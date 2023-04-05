@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/grafana/grafana-env-datasource-backend/pkg/plugin"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
-	"github.com/grafana/grafana-starter-datasource-backend/pkg/plugin"
 	"github.com/stretchr/testify/require"
 )
 

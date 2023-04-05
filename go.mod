@@ -1,4 +1,4 @@
-module github.com/grafana/grafana-starter-datasource-backend
+module github.com/grafana/grafana-env-datasource-backend
 
 go 1.19
 
