@@ -34,10 +34,6 @@
         "path": "img/dashboard.png"
       },
       {
-        "name": "Configuration",
-        "path": "img/config.png"
-      },
-      {
         "name": "Variables",
         "path": "img/variables.png"
       }

@@ -8,6 +8,7 @@
 - Add NGINX configuration example (#18)
 - Update to Grafana 9.3.6 (#19)
 - Update to Grafana 9.4.7 (#20)
+- Update backend and workflows to Go 1.19 (#21)
 
 ## 2.2.0 (2022-11-06)
 
