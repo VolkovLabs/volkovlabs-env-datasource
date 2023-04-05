@@ -7,7 +7,7 @@ services:
     ports:
       - 3000:3000/tcp
     environment:
-      - GF_INSTALL_PLUGINS=https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v2.2.0/volkovlabs-env-datasource-2.2.0.zip;volkovlabs-env-datasource
+      - GF_INSTALL_PLUGINS=https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v2.3.0/volkovlabs-env-datasource-2.3.0.zip;volkovlabs-env-datasource
     volumes:
       - ./provisioning:/etc/grafana/provisioning
 

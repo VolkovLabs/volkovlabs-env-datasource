@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.3.0 (2023-04-04)
+## 2.3.0 (2023-04-05)
 
 ### Features / Enhancements
 
@@ -9,6 +9,7 @@
 - Update to Grafana 9.3.6 (#19)
 - Update to Grafana 9.4.7 (#20)
 - Update backend and workflows to Go 1.19 (#21)
+- Update Documentation (#22)
 
 ## 2.2.0 (2022-11-06)
 
