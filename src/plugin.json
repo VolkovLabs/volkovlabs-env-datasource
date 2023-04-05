@@ -32,10 +32,6 @@
       {
         "name": "Dashboard",
         "path": "img/dashboard.png"
-      },
-      {
-        "name": "Variables",
-        "path": "img/variables.png"
       }
     ],
     "updated": "%TODAY%",

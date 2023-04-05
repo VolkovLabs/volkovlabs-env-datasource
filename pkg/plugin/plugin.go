@@ -32,7 +32,7 @@ func NewDatasource(dis backend.DataSourceInstanceSettings) (instancemgmt.Instanc
 
 	err := json.Unmarshal(dis.JSONData, &settings)
 	if err != nil {
-		return nil, fmt.Errorf("could not unmarshal PluginSettings json: %w", err)
+		return nil, fmt.Errorf("Could not unmarshal PluginSettings json: %w", err)
 	}
 
 	return &Datasource{Settings: &settings}, nil
