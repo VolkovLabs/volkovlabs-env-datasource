@@ -26,7 +26,7 @@ Environment Data Source is not included in the Grafana Catalog. It can be instal
 grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
 ```
 
-## Features
+## Highlights
 
 - Returns Environment Variables.
 - Allows filtering unnecessary or secured variables using Regex.
