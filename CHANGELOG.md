@@ -4,7 +4,8 @@
 
 ### Features / Enhancements
 
-- Update to Grafana 9.5.2 (#23)
+- Update to Grafana 9.5.2 (#24)
+- Update backend and workflows to Go 1.20 (#25)
 
 ## 2.3.0 (2023-04-05)
 
