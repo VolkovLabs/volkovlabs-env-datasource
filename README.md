@@ -2,7 +2,7 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-[![Grafana](https://img.shields.io/badge/Grafana-9.4.7-orange)](https://www.grafana.com)
+[![Grafana](https://img.shields.io/badge/Grafana-9.5.2-orange)](https://www.grafana.com)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml)
@@ -20,7 +20,7 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Getting Started
 
-Environment Data Source is not included in the Grafana Catalog. It can be installed manually from our Private Repository or downloaded directly from GitHub.
+Environment Data Source is not included in the Grafana Catalog. It can be installed from our Private Repository or downloaded directly from GitHub.
 
 ```bash
 grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
@@ -46,13 +46,9 @@ grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-
 | -------------------------------- | -------------------------------------------- |
 | [Dashboard Variables](https://volkovlabs.io/plugins/volkovlabs-env-datasource/variables/) | Demonstrates how to use Dashboard variables. |
 
-## Feedback
+## Support
 
-We love to hear from you. There are various ways to get in touch with us.
-
-- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues/new/choose).
-- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
-- Star the repository to show your support.
+We provide GitHub Discussions and Premium tier support for the development and private plugins available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 
 ## License
 
