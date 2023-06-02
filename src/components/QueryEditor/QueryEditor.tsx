@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { QueryEditorProps } from '@grafana/data';
 import { DataSource } from '../../datasource';
 import { DataSourceOptions, Query } from '../../types';
@@ -11,8 +11,6 @@ type Props = QueryEditorProps<DataSource, Query, DataSourceOptions>;
 /**
  * Query Editor
  */
-export class QueryEditor extends PureComponent<Props> {
-  render() {
-    return <>No options is available.</>;
-  }
-}
+export const QueryEditor: React.FC<Props> = () => {
+  return <>No options is available.</>;
+};

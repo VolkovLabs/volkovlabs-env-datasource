@@ -1,12 +1,7 @@
-import { shallow, ShallowWrapper } from 'enzyme';
 import React from 'react';
+import { render, screen } from '@testing-library/react';
 import { Query } from '../../types';
 import { QueryEditor } from './QueryEditor';
-
-/**
- * Component
- */
-type ShallowComponent = ShallowWrapper<QueryEditor['props'], QueryEditor['state'], QueryEditor>;
 
 /**
  * Get Query with default values and ability to override
@@ -34,16 +29,12 @@ describe('QueryEditor', () => {
    * Component
    */
   describe('Component', () => {
-    const getComponent = (wrapper: ShallowComponent) => wrapper;
-
     it('Should apply feedType value and change', () => {
       const query = getQuery();
-      const wrapper = shallow<QueryEditor>(
-        <QueryEditor datasource={[] as any} query={query} onRunQuery={onRunQuery} onChange={onChange} />
-      );
 
-      const testedComponent = getComponent(wrapper);
-      expect(testedComponent.exists());
+      render(<QueryEditor datasource={[] as any} query={query} onRunQuery={onRunQuery} onChange={onChange} />);
+
+      expect(screen.getByText('No options is available.')).toBeInTheDocument();
     });
   });
 });
