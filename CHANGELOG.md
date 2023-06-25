@@ -1,6 +1,10 @@
 # Changelog
 
-## 2.5.0 (2023-06-25)
+## 3.0.0 (2023-06-25)
+
+### Breaking changes
+
+- Requires Grafana 9.0+ and 10.0+
 
 ### Features / Enhancements
 
@@ -8,6 +12,8 @@
 - Migrate to Plugin Tools 1.5.2 (#28)
 - Update to Node 18 and npm (#28)
 - Update to Grafana 10.0.0 (#28)
+- Add E2E Cypress testing (#29)
+- Remove Grafana 8.5 support (#29)
 
 ## 2.4.0 (2023-05-13)
 

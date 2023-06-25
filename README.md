@@ -15,8 +15,8 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Requirements
 
-- **Grafana 10** is supported.
-- **Grafana 8.5+**, **Grafana 9.0+** is required for major version 2.
+- **Grafana **9+**, and **Grafana 10+** are required for major version 3.
+- **Grafana 8.5+** and **Grafana 9.0+** are required for major version 2.
 - **Grafana 8.0+** is required for major version 1.
 
 ## Getting Started
