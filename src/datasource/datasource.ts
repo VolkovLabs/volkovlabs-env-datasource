@@ -49,7 +49,7 @@ export class DataSource extends DataSourceWithBackend<Query, DataSourceOptions> 
           for (let i = 0; i < frame.length; i++) {
             const row = getDataFrameRow(frame, i);
             if (row[0] === query) {
-              values.push({ text: row[1] });
+              values.push({ text: row[1] as any });
             }
           }
 

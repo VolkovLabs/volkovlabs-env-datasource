@@ -2,7 +2,7 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-![Grafana](https://img.shields.io/badge/Grafana-9.5.2-orange)
+![Grafana](https://img.shields.io/badge/Grafana-10.0.0-orange)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-env-datasource/actions/workflows/codeql-analysis.yml)
@@ -15,6 +15,7 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Requirements
 
+- **Grafana 10** is supported.
 - **Grafana 8.5+**, **Grafana 9.0+** is required for major version 2.
 - **Grafana 8.0+** is required for major version 1.
 
