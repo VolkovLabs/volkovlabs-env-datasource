@@ -1,6 +1,7 @@
-import React, { ChangeEvent, PureComponent } from 'react';
+import React, { ChangeEvent, useCallback } from 'react';
 import { DataSourcePluginOptionsEditorProps } from '@grafana/data';
 import { InlineField, InlineFieldRow, Input } from '@grafana/ui';
+import { TestIds } from '../../constants';
 import { DataSourceOptions } from '../../types';
 
 /**
@@ -9,39 +10,39 @@ import { DataSourceOptions } from '../../types';
 interface Props extends DataSourcePluginOptionsEditorProps<DataSourceOptions> {}
 
 /**
- * State
- */
-interface State {}
-
-/**
  * Config Editor
  */
-export class ConfigEditor extends PureComponent<Props, State> {
+export const ConfigEditor: React.FC<Props> = ({ options, onOptionsChange }) => {
   /**
    * Filter Change
    */
-  onFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { onOptionsChange, options } = this.props;
-    const jsonData = {
-      ...options.jsonData,
-      filter: event.target.value,
-    };
-    onOptionsChange({ ...options, jsonData });
-  };
+  const onFilterChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const jsonData = {
+        ...options.jsonData,
+        filter: event.target.value,
+      };
+      onOptionsChange({ ...options, jsonData });
+    },
+    [onOptionsChange, options]
+  );
 
   /**
    * Render
    */
-  render() {
-    const { options } = this.props;
-    const { jsonData } = options;
 
-    return (
-      <InlineFieldRow>
-        <InlineField label="Filter" tooltip="Allows to filter unnecessary or secured variables using Regex" grow>
-          <Input onChange={this.onFilterChange} value={jsonData.filter || ''} placeholder="Regex pattern" />
-        </InlineField>
-      </InlineFieldRow>
-    );
-  }
-}
+  const { jsonData } = options;
+
+  return (
+    <InlineFieldRow>
+      <InlineField label="Filter" tooltip="Allows to filter unnecessary or secured variables using Regex" grow>
+        <Input
+          onChange={onFilterChange}
+          value={jsonData.filter || ''}
+          placeholder="Regex pattern"
+          data-testid={TestIds.configEditor.fieldFilter}
+        />
+      </InlineField>
+    </InlineFieldRow>
+  );
+};
