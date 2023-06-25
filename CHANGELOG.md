@@ -4,7 +4,7 @@
 
 ### Breaking changes
 
-- Requires Grafana 9.0+ and 10.0+
+- Requires Grafana 9 and Grafana 10
 
 ### Features / Enhancements
 
