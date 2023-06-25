@@ -5,6 +5,9 @@
 ### Features / Enhancements
 
 - Update unit tests with testing-library/react (#27)
+- Migrate to Plugin Tools 1.5.2 (#28)
+- Update to Node 18 and npm (#28)
+- Update to Grafana 10.0.0 (#28)
 
 ## 2.4.0 (2023-05-13)
 

@@ -12,5 +12,3 @@ services:
     volumes:
       - ./dist:/var/lib/grafana/plugins/volkovlabs-env-datasource
       - ./provisioning:/etc/grafana/provisioning
-      # Uncomment to preserve Grafana configuration
-      # - ./data:/var/lib/grafana
