@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.5.0 (2023-06-25)
+
+### Features / Enhancements
+
+- Update unit tests with testing-library/react (#27)
+
 ## 2.4.0 (2023-05-13)
 
 ### Features / Enhancements
