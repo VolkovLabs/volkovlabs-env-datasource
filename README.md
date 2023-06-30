@@ -45,7 +45,8 @@ grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/
 
 ## Support
 
-We provide GitHub Discussions and Premium tier support for the development plugins available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
+- Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and add a comment.
+- Premium support for the development plugins is available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 
 ## License
 
