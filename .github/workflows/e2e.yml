@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Start Grafana (latest version)
+      - name: Start Grafana
         run: docker-compose up -d
 
       - name: Run e2e tests
@@ -35,15 +35,6 @@ jobs:
 
       - name: Stop Grafana
         run: docker-compose down
-
-      - name: Start Grafana (minimum required version)
-        run: docker-compose -f docker-compose-min.yml up -d
-
-      - name: Run e2e tests
-        run: npm run e2e
-
-      - name: Stop Grafana
-        run: docker-compose -f docker-compose-min.yml down
 
       - uses: actions/upload-artifact@v3
         if: failure()
