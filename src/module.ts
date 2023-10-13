@@ -4,7 +4,7 @@ import { DataSource } from './datasource';
 import { DataSourceOptions, Query } from './types';
 
 /**
- * Datasource Plugin
+ * Data Source Plugin
  */
 export const plugin = new DataSourcePlugin<DataSource, Query, DataSourceOptions>(DataSource)
   .setConfigEditor(ConfigEditor)
