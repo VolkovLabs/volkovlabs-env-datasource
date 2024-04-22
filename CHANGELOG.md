@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Add plugin e2e tests and remove cypress (#35)
+
 ## 3.1.0 (2023-10-13)
 
 ### Features / Enhancements
