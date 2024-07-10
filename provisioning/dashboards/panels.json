@@ -62,14 +62,17 @@
         "graphMode": "area",
         "justifyMode": "auto",
         "orientation": "auto",
+        "percentChangeColorMode": "standard",
         "reduceOptions": {
           "calcs": ["lastNotNull"],
           "fields": "/^Value$/",
           "values": true
         },
-        "textMode": "auto"
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
-      "pluginVersion": "9.3.6",
+      "pluginVersion": "11.1.0",
       "title": "Edition",
       "transformations": [
         {
@@ -128,14 +131,17 @@
         "graphMode": "area",
         "justifyMode": "auto",
         "orientation": "auto",
+        "percentChangeColorMode": "standard",
         "reduceOptions": {
           "calcs": ["lastNotNull"],
           "fields": "/^Value$/",
           "values": true
         },
-        "textMode": "value"
+        "showPercentChange": false,
+        "textMode": "value",
+        "wideLayout": true
       },
-      "pluginVersion": "9.3.6",
+      "pluginVersion": "11.1.0",
       "title": "Version",
       "transformations": [
         {
@@ -171,7 +177,9 @@
           },
           "custom": {
             "align": "auto",
-            "displayMode": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
             "inspect": false
           },
           "mappings": [],
@@ -199,7 +207,9 @@
       },
       "id": 3,
       "options": {
+        "cellHeight": "sm",
         "footer": {
+          "countRows": false,
           "fields": "",
           "reducer": ["sum"],
           "show": false
@@ -212,21 +222,20 @@
           }
         ]
       },
-      "pluginVersion": "9.3.6",
+      "pluginVersion": "11.1.0",
       "title": "Environment Variables",
       "type": "table"
     }
   ],
-  "schemaVersion": 37,
-  "style": "dark",
+  "schemaVersion": 39,
   "tags": [],
   "templating": {
     "list": [
       {
         "current": {
-          "selected": true,
-          "text": "9.3.6",
-          "value": "9.3.6"
+          "selected": false,
+          "text": "11.1.0",
+          "value": "11.1.0"
         },
         "datasource": {
           "type": "volkovlabs-env-datasource",
