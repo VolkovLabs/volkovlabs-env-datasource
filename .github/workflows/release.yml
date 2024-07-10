@@ -87,7 +87,7 @@ jobs:
           md5sum ${{ steps.metadata.outputs.archive }} > ${{ steps.metadata.outputs.archive-checksum }}
           echo "checksum=$(cat ./${{ steps.metadata.outputs.archive-checksum }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
-          zip -x MANIFEST.txt ${{ steps.metadata.outputs.archive-unsigned }} ${{ steps.metadata.outputs.plugin-id }} -r
+          zip ${{ steps.metadata.outputs.archive-unsigned }} ${{ steps.metadata.outputs.plugin-id }} -r -x MANIFEST.txt
           md5sum ${{ steps.metadata.outputs.archive-unsigned }} > ${{ steps.metadata.outputs.archive-unsigned-checksum }}
           echo "checksum=$(cat ./${{ steps.metadata.outputs.archive-unsigned-checksum }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
