@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.0.0 (IN PROGRESS)
+## 4.0.0 (2024-07-10)
 
 ### Breaking changes
 
@@ -8,10 +8,11 @@
 
 ### Features / Enhancements
 
-- Add plugin e2e tests and remove cypress (#35)
+- Added plugin e2e tests and remove cypress (#35)
 - Updated E2E tests to use Docker (#39)
-- Update Grafana 11 dependencies (#40)
+- Updated Grafana 11 dependencies (#40)
 - Updated workflow actions (#40)
+- Added unsigned archive (#41)
 
 ## 3.1.0 (2023-10-13)
 
