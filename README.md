@@ -39,10 +39,10 @@ grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/
 
 | Section                                                                               | Description                                                  |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [Deployment](https://volkovlabs.io/plugins/volkovlabs-env-datasource/deployment/)     | Explains deployment options for the data source.             |
-| [Features](https://volkovlabs.io/plugins/volkovlabs-env-datasource/features/)         | Demonstrates data source features.                           |
-| [Provisioning](https://volkovlabs.io/plugins/volkovlabs-env-datasource/provisioning/) | Demonstrates how to automatically provision the data Source. |
-| [Release Notes](https://volkovlabs.io/plugins/volkovlabs-env-datasource/release/)     | Stay up to date with the latest features and updates.        |
+| [Deployment](https://volkovlabs.io/grafana/volkovlabs-env-datasource/deployment/)     | Explains deployment options for the data source.             |
+| [Features](https://volkovlabs.io/grafana/volkovlabs-env-datasource/features/)         | Demonstrates data source features.                           |
+| [Provisioning](https://volkovlabs.io/grafana/volkovlabs-env-datasource/provisioning/) | Demonstrates how to automatically provision the data Source. |
+| [Release Notes](https://volkovlabs.io/grafana/volkovlabs-env-datasource/release/)     | Stay up to date with the latest features and updates.        |
 
 ## Feedback
 

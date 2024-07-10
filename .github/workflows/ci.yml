@@ -61,13 +61,13 @@ jobs:
           echo "archive-checksum=${GRAFANA_PLUGIN_ARTIFACT_CHECKSUM}" >> $GITHUB_OUTPUT
 
       - name: Test backend
-        uses: magefile/mage-action@v1
+        uses: magefile/mage-action@v3
         with:
           version: latest
           args: coverage
 
       - name: Build backend
-        uses: magefile/mage-action@v1
+        uses: magefile/mage-action@v3
         with:
           version: latest
           args: buildAll
