@@ -2,7 +2,7 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-![Grafana](https://img.shields.io/badge/Grafana-10.1-orange)
+![Grafana](https://img.shields.io/badge/Grafana-11.1-orange)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 ![E2E](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/E2E/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
@@ -16,16 +16,17 @@ The Environment Data Source is a plugin for Grafana that returns environment var
 
 ## Requirements
 
-- Version 3.X requires Grafana 9 or Grafana 10.
-- Version 2.X requires Grafana 8.5 or Grafana 9.
-- Version 1.X requires Grafana 8.
+- Environment Data Source 4.X requires Grafana 10 or Grafana 11.
+- Environment Data Source 3.X requires Grafana 9 or Grafana 10.
+- Environment Data Source 2.X requires Grafana 8.5 or Grafana 9.
+- Environment Data Source 1.X requires Grafana 8.
 
 ## Getting Started
 
 Environment Data Source is not included in the Grafana Catalog. It can be installed directly from GitHub.
 
 ```bash
-grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v3.1.0/volkovlabs-env-datasource-3.1.0.zip plugins install volkovlabs-env-datasource
+grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v4.0.0/volkovlabs-env-datasource-4.0.0.zip plugins install volkovlabs-env-datasource
 ```
 
 ## Highlights
@@ -36,17 +37,21 @@ grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/
 
 ## Documentation
 
-| Section                      | Description                                                  |
-| ---------------------------- | ------------------------------------------------------------ |
+| Section                                                                               | Description                                                  |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [Deployment](https://volkovlabs.io/plugins/volkovlabs-env-datasource/deployment/)     | Explains deployment options for the data source.             |
 | [Features](https://volkovlabs.io/plugins/volkovlabs-env-datasource/features/)         | Demonstrates data source features.                           |
 | [Provisioning](https://volkovlabs.io/plugins/volkovlabs-env-datasource/provisioning/) | Demonstrates how to automatically provision the data Source. |
 | [Release Notes](https://volkovlabs.io/plugins/volkovlabs-env-datasource/release/)     | Stay up to date with the latest features and updates.        |
 
-## Support
+## Feedback
 
+We're looking forward to hearing from you. You can use different ways to get in touch with us.
+
+- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues).
 - Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and leave your comments.
-- Premium support for the development plugins is available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
+- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
+- Support our project by starring the repository.
 
 ## License
 
