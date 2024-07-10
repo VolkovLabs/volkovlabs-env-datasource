@@ -62,23 +62,33 @@ jobs:
 
           export GRAFANA_PLUGIN_ID=$(cat dist/plugin.json | jq -r .id)
           export GRAFANA_PLUGIN_VERSION=$(cat dist/plugin.json | jq -r .info.version)
-          export GRAFANA_PLUGIN_TYPE=$(cat dist/plugin.json | jq -r .type)
+
           export GRAFANA_PLUGIN_ARTIFACT=${GRAFANA_PLUGIN_ID}-${GRAFANA_PLUGIN_VERSION}.zip
           export GRAFANA_PLUGIN_ARTIFACT_CHECKSUM=${GRAFANA_PLUGIN_ARTIFACT}.md5
+          export GRAFANA_PLUGIN_ARTIFACT_UNSIGNED=${GRAFANA_PLUGIN_ID}-${GRAFANA_PLUGIN_VERSION}.unsigned.zip
+          export GRAFANA_PLUGIN_ARTIFACT_CHECKSUM_UNSIGNED=${GRAFANA_PLUGIN_ARTIFACT}.unsigned.md5
 
           echo "plugin-id=${GRAFANA_PLUGIN_ID}" >> $GITHUB_OUTPUT
           echo "plugin-version=${GRAFANA_PLUGIN_VERSION}" >> $GITHUB_OUTPUT
-          echo "plugin-type=${GRAFANA_PLUGIN_TYPE}" >> $GITHUB_OUTPUT
+
           echo "archive=${GRAFANA_PLUGIN_ARTIFACT}" >> $GITHUB_OUTPUT
+          echo "archive-unsigned=${GRAFANA_PLUGIN_ARTIFACT_UNSIGNED}" >> $GITHUB_OUTPUT
+
           echo "archive-checksum=${GRAFANA_PLUGIN_ARTIFACT_CHECKSUM}" >> $GITHUB_OUTPUT
+          echo "archive-unsigned-checksum=${GRAFANA_PLUGIN_ARTIFACT_UNSIGNED_CHECKSUM}" >> $GITHUB_OUTPUT
 
       - name: Package plugin
         id: package-plugin
         run: |
           mv dist ${{ steps.metadata.outputs.plugin-id }}
+
           zip ${{ steps.metadata.outputs.archive }} ${{ steps.metadata.outputs.plugin-id }} -r
           md5sum ${{ steps.metadata.outputs.archive }} > ${{ steps.metadata.outputs.archive-checksum }}
           echo "checksum=$(cat ./${{ steps.metadata.outputs.archive-checksum }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+          zip -x ${{ steps.metadata.outputs.plugin-id }}/MANIFEST.txt ${{ steps.metadata.outputs.archive-unsigned }} ${{ steps.metadata.outputs.plugin-id }} -r
+          md5sum ${{ steps.metadata.outputs.archive-unsigned }} > ${{ steps.metadata.outputs.archive-unsigned-checksum }}
+          echo "checksum=$(cat ./${{ steps.metadata.outputs.archive-unsigned-checksum }} | cut -d' ' -f1)" >> $GITHUB_OUTPUT
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -99,3 +109,15 @@ jobs:
         with:
           name: ${{ steps.metadata.outputs.archive-checksum }}
           path: ${{ steps.metadata.outputs.archive-checksum }}
+
+      - name: Upload unsigned artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.archive-unsigned }}
+          path: ${{ steps.metadata.outputs.archive-unsigned }}
+
+      - name: Upload unsigned artifact checksum
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.archive-unsigned-checksum }}
+          path: ${{ steps.metadata.outputs.archive-unsigned-checksum }}
