@@ -12,7 +12,7 @@
 - Updated E2E tests to use Docker (#39)
 - Updated Grafana 11 dependencies (#40)
 - Updated workflow actions (#40)
-- Added unsigned archive (#41)
+- Added unsigned archive (#41, #42)
 
 ## 3.1.0 (2023-10-13)
 
