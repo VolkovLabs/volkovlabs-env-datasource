@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.1.0 (2024-11-03)
+
+### Features / Enhancements
+
+- Updated to Grafana 11.3.0 and dependencies (#43)
+
 ## 4.0.0 (2024-07-10)
 
 ### Breaking changes

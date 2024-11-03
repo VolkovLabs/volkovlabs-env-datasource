@@ -2,7 +2,7 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-env-datasource/main/src/img/dashboard.png)
 
-![Grafana](https://img.shields.io/badge/Grafana-11.1-orange)
+![Grafana](https://img.shields.io/badge/Grafana-11.3-orange)
 ![CI](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/CI/badge.svg)
 ![E2E](https://github.com/volkovlabs/volkovlabs-env-datasource/workflows/E2E/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-env-datasource)
@@ -49,21 +49,20 @@ grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/
 
 ## Documentation
 
-| Section                                                                               | Description                                                  |
-| ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [Deployment](https://volkovlabs.io/grafana/volkovlabs-env-datasource/deployment/)     | Explains deployment options for the data source.             |
-| [Features](https://volkovlabs.io/grafana/volkovlabs-env-datasource/features/)         | Demonstrates data source features.                           |
-| [Provisioning](https://volkovlabs.io/grafana/volkovlabs-env-datasource/provisioning/) | Demonstrates how to automatically provision the data Source. |
-| [Release Notes](https://volkovlabs.io/grafana/volkovlabs-env-datasource/release/)     | Stay up to date with the latest features and updates.        |
+| Section                                                                 | Description                                                  |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [Deployment](https://volkovlabs.io/grafana/environment/deployment/)     | Explains deployment options for the data source.             |
+| [Features](https://volkovlabs.io/grafana/environment/features/)         | Demonstrates data source features.                           |
+| [Provisioning](https://volkovlabs.io/grafana/environment/provisioning/) | Demonstrates how to automatically provision the data Source. |
+| [Release Notes](https://volkovlabs.io/grafana/environment/release/)     | Stay up to date with the latest features and updates.        |
 
-## Feedback
+## Always happy to hear from you
 
 We're looking forward to hearing from you. You can use different ways to get in touch with us.
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-env-datasource/issues).
-- Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and leave your comments.
-- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
-- Support our project by starring the repository.
+- Subscribe to our [YouTube Channel](https://youtube.com/@volkovlabs) and leave your comments.
+- Become a [Business Suite sponsor](https://github.com/sponsors/VolkovLabs).
 
 ## License
 
