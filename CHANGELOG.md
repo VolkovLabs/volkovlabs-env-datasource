@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Updated to Grafana 11.3.0 and dependencies (#43)
+- Updated backend SDK to 0.253 (#44)
 
 ## 4.0.0 (2024-07-10)
 
