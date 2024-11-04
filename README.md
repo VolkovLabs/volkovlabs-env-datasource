@@ -30,7 +30,7 @@ Environment Data Source is not included in the Grafana Catalog. It can be instal
 Can be used behind the proxy server (NGINX).
 
 ```bash
-grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v4.0.0/volkovlabs-env-datasource-4.0.0.zip plugins install volkovlabs-env-datasource
+grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v4.1.0/volkovlabs-env-datasource-4.1.0.zip plugins install volkovlabs-env-datasource
 ```
 
 ### Unsigned version
@@ -38,7 +38,7 @@ grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/
 Can be used with any Grafana instance. Requires to add the environment data source to the allowed unsigned plugin configuration.
 
 ```bash
-grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v4.0.0/volkovlabs-env-datasource-4.0.0.unsigned.zip plugins install volkovlabs-env-datasource
+grafana cli --pluginUrl https://github.com/VolkovLabs/volkovlabs-env-datasource/releases/download/v4.1.0/volkovlabs-env-datasource-4.1.0.unsigned.zip plugins install volkovlabs-env-datasource
 ```
 
 ## Highlights
